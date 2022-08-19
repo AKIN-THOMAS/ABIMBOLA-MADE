@@ -827,10 +827,20 @@ img{
     .about-title{
         margin-top: 90px;
     }
+    .about-section{
+        width: 100%;
+    }
+    .header .hamburger-btn{
+        top: 5%;
+        left: 85%;
+     }
 }
 
 
 @media(max-width: 767px){
+    body{
+        max-width: 100%;
+    }
     .contact-section .w-50,
     .contact-section .contact-item,
     .portfolio-section .portfolio-items,
@@ -842,23 +852,50 @@ img{
         flex: 0 0 100%;
         max-width: 100%;
     }
+    .logo a h3{
+        font-size: 15px;
+    }
+    .home-section{
+        justify-content: center;
+        margin: auto;
+        align-items: center;
+    }
     .home-section .home-text {
         order: 2;
-        margin-top: 40px;
+    }
+    .home-section .home-text .mee{
+        width: 16px;
+        padding: 6px 22px;
     }
     .home-section .home-text{
         text-align: center;
-        margin-left: 180px;
+        margin: auto;
+        justify-content: center;
+        margin-right: 190px;
     }
     .home-section .full-screen{
-        padding: 100px 0;
+        padding: 130px 0;
     }
     .home-section .home-img .img-box{
-        margin-bottom: 40px;
-        max-width: 350px;
+        margin-bottom: 10px;
+        width: 350px;
     }
     .effect-4{
         left: 19%;
+    }
+    .about-section{
+        width: 100%;
+    }
+    .about-section .about-info .mee{
+        width: 20px;
+        padding: 12px 13px;
+    }
+    .about-section .about-img .img-box{
+        width: 270px;
+        margin: auto;
+    }
+    .about-section .about-img .img-box img{
+        width: 250px;
     }
     .about-section .timeline .timeline-item:nth-child(odd){
         padding-right: 12px;
@@ -892,6 +929,22 @@ img{
         bottom: 36%;
         left: 2%;
     }
+    .header .hamburger-btn{
+       top: 5%;
+       left: 85%;
+    }
+    .portfolio-section .portfolio-items{
+        max-width: 80%;
+        margin: auto;
+        margin-bottom: 12px;
+    }
+    .pp-content{
+        max-width: 500px;
+    }
+    /* .contact-section .contact-item{
+        width: 100%;
+        max-width: 300px;
+    } */
 
 }
 
@@ -900,13 +953,35 @@ img{
         max-width: 260px;
     }
     .home-section .home-text h2{
-        font-size: 20px;
+        font-size: 15px;
     }
     .home-section .home-text{
-        margin-left: 150px;
+        margin-left: 100px;
     }
     .home-section .home-text h1{
-        font-size: 24px;
+        font-size: 18px;
     }
-    
+    .home-section .home-text .mee{
+        width: 16px;
+        margin: auto;
+        padding: 6px 12px;
+        /* margin-left: -25px; */
+    }
+    .header .hamburger-btn{
+        top: 5%;
+        left: 78%;
+     }
+}
+@media(max-width: 320px){
+    .home-section .home-text .mee{
+        width: 16px;
+        margin: auto;
+        padding: 6px 12px;
+        margin-left: -25px;
+    }
+    .header .hamburger-btn{
+        top: 9%;
+        left: 78%;
+     }
+ 
 }
